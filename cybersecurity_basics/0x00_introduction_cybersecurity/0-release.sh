@@ -1,2 +1,2 @@
 #!/bin/bash
-lsb_release -i | awk -F: '{print $2}' | xargs
+lsb_release -is
