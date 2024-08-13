@@ -169,3 +169,50 @@ Message boards: Discourse 2.9.0<br>
 Programming languages: Ruby<br>
 Web frameworks: Ruby on Rails<br>
 
+### 54.205.203.185
+Hostnames: ec2-54-205-203-185.compute-1.amazonaws.com, holbertonschool.com<br>
+Domains: amazonaws.com, holbertonschool.com<br>
+Cloud Provider: Amazon<br>
+Cloud Region: us-east-1<br>
+Cloud Service: EC2<br>
+Country: United States<br>
+City: Ashburn<br>
+Organization: Amazon.com, Inc.<br>
+ISP: Amazon.com, Inc.<br>
+ASN: AS14618<br>
+
+### 35.181.224.126
+Hostnames: ec2-35-181-224-126.eu-west-3.compute.amazonaws.com, read.holbertonschool.com<br>
+Domains:amazonaws.com, holbertonschool.com<br>
+Cloud Provider: Amazon<br>
+Cloud Region: eu-west-3<br>
+Cloud Service: EC2<br>
+Country: France<br>
+City: Paris<br>
+Organization: Amazon Data Services France<br>
+ISP: Amazon.com, Inc.<br>
+ASN: AS16509<br>
+
+### 54.224.211.11
+Hostnames: ec2-54-224-211-11.compute-1.amazonaws.com, lvl2-discourse-staging.holbertonschool.com<br>
+Domains: amazonaws.com, holbertonschool.com<br>
+Cloud Provider: Amazon<br>
+Cloud Region: us-east-1<br>
+Cloud Service: EC2<br>
+Country: United States<br>
+City: Ashburn<br>
+Organization: Amazon Technologies Inc.<br>
+ISP: Amazon.com, Inc.<br>
+ASN: AS14618<br>
+
+### 52.47.126.214
+Hostnames: ec2-52-47-126-214.eu-west-3.compute.amazonaws.com, read.holbertonschool.com<br>
+Domains: amazonaws.com, holbertonschool.com<br>
+Cloud Provider: Amazon<br>
+Cloud Region: eu-west-3<br>
+Cloud Service: EC2<br>
+Country: France<br>
+City: Paris<br>
+Organization: Amazon Data Services France<br>
+ISP: Amazon.com, Inc.<br>
+ASN: AS16509<br>
