@@ -1,1 +1,1 @@
-ip.proto in {1,6, 17}
+ip.proto == 1
