@@ -1,1 +1,1 @@
-udp
+udp and icmp.type == 3
