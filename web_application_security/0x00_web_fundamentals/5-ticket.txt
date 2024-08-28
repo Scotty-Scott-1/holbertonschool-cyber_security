@@ -1,4 +1,4 @@
-POST /ticket?id=5 HTTP/1.1
+GET /ticket?id=5 HTTP/1.1
 Host: web0x00.hbtn
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
 Content-Type: application/x-www-form-urlencoded
