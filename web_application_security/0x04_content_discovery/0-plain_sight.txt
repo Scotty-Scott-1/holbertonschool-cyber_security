@@ -1,1 +1,1 @@
-/wp-admin, wp-login.php, Wordpress
+/h1d33n, env.conf, wordpress
