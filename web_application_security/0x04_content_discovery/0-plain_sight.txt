@@ -1,1 +1,1 @@
-/wp-admin/, /ta-holbie-malta, Wordpress
+/wp-admin, wp-login.php, Wordpress
