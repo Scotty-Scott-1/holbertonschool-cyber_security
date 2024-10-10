@@ -1,3 +1,2 @@
 #!/bin/bash
-echo ""$1":test" | sudo chpasswd
-sudo usermod -aG sudo "$1"
+echo "$1 ALL=(ALL) NOPASSWD: ALL" | sudo tee -a /etc/sudoers 
