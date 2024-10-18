@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /etc/ssh/ssh_config | grep -vE '^(#|Host *)'
+cat /etc/ssh/ssh_config | grep -Ev '^(#|Host *)'
