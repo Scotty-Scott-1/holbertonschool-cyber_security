@@ -19,8 +19,6 @@ try:
                 address_range = line.split()[0]
                 heap_start, heap_end = [int(adr, 16) for adr in address_range
                                         .split("-")]
-                print("heap range = {} - {}"
-                      .format(hex(heap_start), hex(heap_end)))
 except Exception as e:
     print("error getting pid range")
     sys.exit(1)
@@ -33,18 +31,12 @@ try:
         heap_data = mem_file.read(heap_end - heap_start)
 
         target_index = heap_data.find(target_str.encode())
-        if target_index == -1:
-            print("targer string not found")
-        else:
-            print("ja")
-
         target_address = heap_start + target_index
-        print("target address found at: {}".format(hex(target_address)))
 
         replacement = new_str.encode().ljust(len(target_str), b'\0')
         mem_file.seek(target_address)
         mem_file.write(replacement)
-        print("success")
 
 except Exception as e:
     print("error writing to mem address")
+    sys.exit(1)
