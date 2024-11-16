@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-import psutil
-import sys
-import os
-import re
-
-
 """
 replace a string in pid
 """
+import sys
+
 pid = sys.argv[1]
 target_str = sys.argv[2]
 new_str = sys.argv[3]
@@ -20,7 +16,7 @@ try:
                 heap_start, heap_end = [int(adr, 16) for adr in address_range
                                         .split("-")]
 except Exception as e:
-    print("error getting pid range")
+    print("error: {}.".format(e))
     sys.exit(1)
 
 mem_file_path = f"/proc/{pid}/mem"
@@ -38,5 +34,5 @@ try:
         mem_file.write(replacement)
 
 except Exception as e:
-    print("error writing to mem address")
+    print("error: {}.".format(e))
     sys.exit(1)
