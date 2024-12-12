@@ -6,7 +6,7 @@ class HelloWorld
   attr_reader :message
 
   def initialize
-    @message = 'Hello World!'
+    @message = 'Hello, World!'
   end
 
   def print_hello
