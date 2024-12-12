@@ -10,6 +10,6 @@ class HelloWorld
   end
 
   def print_hello
-    puts message
+    print message
   end
 end
