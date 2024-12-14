@@ -19,10 +19,5 @@ def post_request(url, body_params)
 
   puts "Response status: #{response.code} #{response.message}"
   puts 'Response body:'
-  if code == "404"
-    puts "{\n}"
-    
-  else
   puts response.body
-  end
 end
