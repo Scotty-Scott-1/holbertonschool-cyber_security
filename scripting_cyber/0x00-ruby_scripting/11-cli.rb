@@ -7,10 +7,6 @@ file = 'tasks.txt'
 OptionParser.new do |op|
   op.banner  = 'Usage: cli.rb [options]'
 
-  op.on("-h", "--help", "Show help") do
-    puts op
-    exit
-  end
 
   op.on("-a", "--add TASK", "Add a new task") do |task|
     File.open(file, 'a') do |file|
@@ -19,15 +15,6 @@ OptionParser.new do |op|
     puts "Task '#{task}' added."
   end
 
-  op.on("-l", "--list", "List all tasks") do
-    i = 1
-    array = File.readlines(file)
-    array.each do |line|
-      word = line.chomp!
-      puts "#{i}. #{word}"
-      i += 1
-    end 
-  end
 
   op.on("-r", "--remove INDEX", "Remove a task by index") do |indx|
 
@@ -43,6 +30,25 @@ OptionParser.new do |op|
     puts "Task '#{rm_task}' removed."
   end
 
+  op.on("-l", "--list", "List all tasks") do
+    i = 1
+    array = File.readlines(file)
+    array.each do |line|
+      word = line.chomp!
+      puts "#{i}. #{word}"
+      i += 1
+    end 
+  end
 
+
+
+
+
+
+
+  op.on("-h", "--help", "Show help") do
+    puts op
+    exit
+  end
 
 end.parse!
