@@ -15,6 +15,16 @@ OptionParser.new do |op|
     puts "Task '#{task}' added."
   end
 
+  op.on("-l", "--list", "List all tasks") do
+    i = 1
+    array = File.readlines(file)
+    array.each do |line|
+      word = line.chomp!
+      puts "#{i}. #{word}"
+      i += 1
+    end 
+  end
+
 
   op.on("-r", "--remove INDEX", "Remove a task by index") do |indx|
 
@@ -29,21 +39,6 @@ OptionParser.new do |op|
     end
     puts "Task '#{rm_task}' removed."
   end
-
-  op.on("-l", "--list", "List all tasks") do
-    i = 1
-    array = File.readlines(file)
-    array.each do |line|
-      word = line.chomp!
-      puts "#{i}. #{word}"
-      i += 1
-    end 
-  end
-
-
-
-
-
 
 
   op.on("-h", "--help", "Show help") do
