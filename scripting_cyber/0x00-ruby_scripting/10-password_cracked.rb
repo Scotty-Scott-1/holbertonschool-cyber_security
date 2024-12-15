@@ -6,8 +6,8 @@ if ARGV.length != 2
 end
 
 hashed_password = ARGV[0]
-file = ARGV[1]
-array = File.readlines(file)
+dictionary_file = ARGV[1]
+array = File.readlines(dictionary_file)
 
 array.each do |line|
   word = line.chomp!
