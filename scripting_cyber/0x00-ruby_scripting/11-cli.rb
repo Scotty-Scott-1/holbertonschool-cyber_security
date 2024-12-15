@@ -18,6 +18,7 @@ OptionParser.new do |op|
   op.on("-l", "--list", "List all tasks") do
     i = 1
     array = File.readlines(file)
+    puts "Tasks:"
     array.each do |line|
       word = line.chomp!
       puts "#{i}. #{word}"
