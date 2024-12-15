@@ -5,6 +5,7 @@ require 'fileutils'
 begin
   if ARGV.length != 2
     puts 'Usage: 9-download_file.rb URL LOCAL_FILE_PATH'
+    exit(1)
   end
   url = #{argv[0]}
   current_dir = Dir.pwd
